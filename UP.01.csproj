@@ -1,0 +1,462 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{AE329C7C-C0FC-3614-D10E-7E445519E2D7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>UP._01</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Hospital.Core\DrugService.cs" />
+    <Compile Include="Hospital.Core\IDrugRepository.cs" />
+    <Compile Include="Hospital.Core\Models\Drug.cs" />
+    <Compile Include="Hospital.Core\obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="Hospital.Core\Properties\AssemblyInfo.cs" />
+    <Compile Include="Hospital.Data\MySqlDrugRepository.cs" />
+    <Compile Include="Hospital.Data\obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="Hospital.Data\Properties\AssemblyInfo.cs" />
+    <Compile Include="HospitalSolution\Hospital.UIForm.cs" />
+    <Compile Include="HospitalSolution\Hospital.UIForm.Designer.cs">
+      <DependentUpon>Hospital.UIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalSolution\obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="HospitalSolution\Program.cs" />
+    <Compile Include="HospitalSolution\Properties\AssemblyInfo.cs" />
+    <Compile Include="HospitalSolution\Properties\Resources.Designer.cs" />
+    <Compile Include="HospitalSolution\Properties\Settings.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hospital.Core\Hospital.Core.csproj" />
+    <None Include="Hospital.Core\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Hospital.Core\obj\Debug\Hospital.Core.csproj.AssemblyReference.cache" />
+    <None Include="Hospital.Core\obj\Debug\Hospital.Core.csproj.CoreCompileInputs.cache" />
+    <None Include="Hospital.Data\app.config" />
+    <None Include="Hospital.Data\bin\Debug\Hospital.Data.dll.config" />
+    <None Include="Hospital.Data\Hospital.Data.csproj" />
+    <None Include="Hospital.Data\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Hospital.Data\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Hospital.Data\obj\Debug\Hospital.0E9C0172.Up2Date" />
+    <None Include="Hospital.Data\obj\Debug\Hospital.Data.csproj.AssemblyReference.cache" />
+    <None Include="Hospital.Data\obj\Debug\Hospital.Data.csproj.CoreCompileInputs.cache" />
+    <None Include="Hospital.Data\packages.config" />
+    <None Include="HospitalSolution\.gitattributes" />
+    <None Include="HospitalSolution\.gitignore" />
+    <None Include="HospitalSolution\App.config" />
+    <None Include="HospitalSolution\bin\Debug\Hospital.Data.dll.config" />
+    <None Include="HospitalSolution\bin\Debug\HospitalSolution.exe.config" />
+    <None Include="HospitalSolution\Hospital.UI.csproj" />
+    <None Include="HospitalSolution\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="HospitalSolution\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="HospitalSolution\obj\Debug\Hospital.csproj.AssemblyReference.cache" />
+    <None Include="HospitalSolution\obj\Debug\Hospital.FC42DFEA.Up2Date" />
+    <None Include="HospitalSolution\obj\Debug\Hospital.UI.csproj.AssemblyReference.cache" />
+    <None Include="HospitalSolution\obj\Debug\Hospital.UI.csproj.CoreCompileInputs.cache" />
+    <None Include="HospitalSolution\obj\Debug\Hospital.UI.csproj.GenerateResource.cache" />
+    <None Include="HospitalSolution\obj\Debug\Hospital.UI.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="HospitalSolution\obj\Debug\HospitalSolution.csproj.AssemblyReference.cache" />
+    <None Include="HospitalSolution\obj\Debug\HospitalSolution.exe.config" />
+    <None Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\.signature.p7s" />
+    <None Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\BouncyCastle.Cryptography.2.6.2.nupkg" />
+    <None Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\LICENSE.md" />
+    <None Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\README.md" />
+    <None Include="HospitalSolution\packages\Google.Protobuf.3.32.0\.signature.p7s" />
+    <None Include="HospitalSolution\packages\Google.Protobuf.3.32.0\Google.Protobuf.3.32.0.nupkg" />
+    <None Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\.signature.p7s" />
+    <None Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\K4os.Compression.LZ4.1.3.8.nupkg" />
+    <None Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\.signature.p7s" />
+    <None Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\K4os.Compression.LZ4.Streams.1.3.8.nupkg" />
+    <None Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\.signature.p7s" />
+    <None Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\K4os.Hash.xxHash.1.0.8.nupkg" />
+    <None Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\.signature.p7s" />
+    <None Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\Microsoft.Bcl.AsyncInterfaces.5.0.0.nupkg" />
+    <None Include="HospitalSolution\packages\MySql.Data.9.5.0\.signature.p7s" />
+    <None Include="HospitalSolution\packages\MySql.Data.9.5.0\LICENSE" />
+    <None Include="HospitalSolution\packages\MySql.Data.9.5.0\MySql.Data.9.5.0.nupkg" />
+    <None Include="HospitalSolution\packages\MySql.Data.9.5.0\README" />
+    <None Include="HospitalSolution\packages\MySql.Data.9.5.0\README.md" />
+    <None Include="HospitalSolution\packages\System.Buffers.4.5.1\.signature.p7s" />
+    <None Include="HospitalSolution\packages\System.Buffers.4.5.1\lib\netcoreapp2.0\_._" />
+    <None Include="HospitalSolution\packages\System.Buffers.4.5.1\lib\uap10.0.16299\_._" />
+    <None Include="HospitalSolution\packages\System.Buffers.4.5.1\ref\netcoreapp2.0\_._" />
+    <None Include="HospitalSolution\packages\System.Buffers.4.5.1\ref\uap10.0.16299\_._" />
+    <None Include="HospitalSolution\packages\System.Buffers.4.5.1\System.Buffers.4.5.1.nupkg" />
+    <None Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\.signature.p7s" />
+    <None Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\buildTransitive\net461\System.Configuration.ConfigurationManager.targets" />
+    <None Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\buildTransitive\net462\_._" />
+    <None Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\buildTransitive\net6.0\_._" />
+    <None Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\buildTransitive\netcoreapp2.0\System.Configuration.ConfigurationManager.targets" />
+    <None Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\PACKAGE.md" />
+    <None Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\System.Configuration.ConfigurationManager.8.0.0.nupkg" />
+    <None Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\.signature.p7s" />
+    <None Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\System.IO.Pipelines.5.0.2.nupkg" />
+    <None Include="HospitalSolution\packages\System.Memory.4.5.5\.signature.p7s" />
+    <None Include="HospitalSolution\packages\System.Memory.4.5.5\lib\netcoreapp2.1\_._" />
+    <None Include="HospitalSolution\packages\System.Memory.4.5.5\ref\netcoreapp2.1\_._" />
+    <None Include="HospitalSolution\packages\System.Memory.4.5.5\System.Memory.4.5.5.nupkg" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\.signature.p7s" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\MonoAndroid10\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\MonoTouch10\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\netcoreapp2.0\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\uap10.0.16299\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\xamarinios10\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\xamarinmac20\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\xamarintvos10\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\xamarinwatchos10\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\MonoAndroid10\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\MonoTouch10\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\netcoreapp2.0\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\uap10.0.16299\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\xamarinios10\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\xamarinmac20\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\xamarintvos10\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\xamarinwatchos10\_._" />
+    <None Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\System.Numerics.Vectors.4.5.0.nupkg" />
+    <None Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\.signature.p7s" />
+    <None Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\buildTransitive\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.targets" />
+    <None Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\buildTransitive\netcoreapp3.1\_._" />
+    <None Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\System.Runtime.CompilerServices.Unsafe.6.0.0.nupkg" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\.signature.p7s" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\MonoAndroid10\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\MonoTouch10\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\netcoreapp2.1\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarinios10\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarinmac20\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarintvos10\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\xamarinwatchos10\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\ref\MonoAndroid10\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\ref\MonoTouch10\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\ref\netcoreapp2.1\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarinios10\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarinmac20\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarintvos10\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\ref\xamarinwatchos10\_._" />
+    <None Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\System.Threading.Tasks.Extensions.4.5.4.nupkg" />
+    <None Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\.signature.p7s" />
+    <None Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\ZstdSharp.Port.0.8.6.nupkg" />
+    <None Include="HospitalSolution\Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hospital.Core\bin\Debug\Hospital.Core.dll" />
+    <Content Include="Hospital.Core\bin\Debug\Hospital.Core.pdb" />
+    <Content Include="Hospital.Core\obj\Debug\Hospital.Core.csproj.FileListAbsolute.txt" />
+    <Content Include="Hospital.Core\obj\Debug\Hospital.Core.dll" />
+    <Content Include="Hospital.Core\obj\Debug\Hospital.Core.pdb" />
+    <Content Include="Hospital.Data\bin\Debug\BouncyCastle.Cryptography.dll" />
+    <Content Include="Hospital.Data\bin\Debug\BouncyCastle.Cryptography.xml" />
+    <Content Include="Hospital.Data\bin\Debug\Google.Protobuf.dll" />
+    <Content Include="Hospital.Data\bin\Debug\Google.Protobuf.pdb" />
+    <Content Include="Hospital.Data\bin\Debug\Google.Protobuf.xml" />
+    <Content Include="Hospital.Data\bin\Debug\Hospital.Core.dll" />
+    <Content Include="Hospital.Data\bin\Debug\Hospital.Core.pdb" />
+    <Content Include="Hospital.Data\bin\Debug\Hospital.Data.dll" />
+    <Content Include="Hospital.Data\bin\Debug\Hospital.Data.pdb" />
+    <Content Include="Hospital.Data\bin\Debug\K4os.Compression.LZ4.dll" />
+    <Content Include="Hospital.Data\bin\Debug\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="Hospital.Data\bin\Debug\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="Hospital.Data\bin\Debug\K4os.Compression.LZ4.xml" />
+    <Content Include="Hospital.Data\bin\Debug\K4os.Hash.xxHash.dll" />
+    <Content Include="Hospital.Data\bin\Debug\K4os.Hash.xxHash.xml" />
+    <Content Include="Hospital.Data\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="Hospital.Data\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="Hospital.Data\bin\Debug\MySql.Data.dll" />
+    <Content Include="Hospital.Data\bin\Debug\MySql.Data.xml" />
+    <Content Include="Hospital.Data\bin\Debug\System.Buffers.dll" />
+    <Content Include="Hospital.Data\bin\Debug\System.Buffers.xml" />
+    <Content Include="Hospital.Data\bin\Debug\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="Hospital.Data\bin\Debug\System.Configuration.ConfigurationManager.xml" />
+    <Content Include="Hospital.Data\bin\Debug\System.IO.Pipelines.dll" />
+    <Content Include="Hospital.Data\bin\Debug\System.IO.Pipelines.xml" />
+    <Content Include="Hospital.Data\bin\Debug\System.Memory.dll" />
+    <Content Include="Hospital.Data\bin\Debug\System.Memory.xml" />
+    <Content Include="Hospital.Data\bin\Debug\System.Numerics.Vectors.dll" />
+    <Content Include="Hospital.Data\bin\Debug\System.Numerics.Vectors.xml" />
+    <Content Include="Hospital.Data\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="Hospital.Data\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="Hospital.Data\bin\Debug\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="Hospital.Data\bin\Debug\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="Hospital.Data\bin\Debug\ZstdSharp.dll" />
+    <Content Include="Hospital.Data\obj\Debug\Hospital.Data.csproj.FileListAbsolute.txt" />
+    <Content Include="Hospital.Data\obj\Debug\Hospital.Data.dll" />
+    <Content Include="Hospital.Data\obj\Debug\Hospital.Data.pdb" />
+    <Content Include="HospitalSolution\bin\Debug\BouncyCastle.Cryptography.dll" />
+    <Content Include="HospitalSolution\bin\Debug\BouncyCastle.Cryptography.xml" />
+    <Content Include="HospitalSolution\bin\Debug\Google.Protobuf.dll" />
+    <Content Include="HospitalSolution\bin\Debug\Google.Protobuf.pdb" />
+    <Content Include="HospitalSolution\bin\Debug\Google.Protobuf.xml" />
+    <Content Include="HospitalSolution\bin\Debug\Hospital.Core.dll" />
+    <Content Include="HospitalSolution\bin\Debug\Hospital.Core.pdb" />
+    <Content Include="HospitalSolution\bin\Debug\Hospital.Data.dll" />
+    <Content Include="HospitalSolution\bin\Debug\Hospital.Data.pdb" />
+    <Content Include="HospitalSolution\bin\Debug\HospitalSolution.exe" />
+    <Content Include="HospitalSolution\bin\Debug\HospitalSolution.pdb" />
+    <Content Include="HospitalSolution\bin\Debug\K4os.Compression.LZ4.dll" />
+    <Content Include="HospitalSolution\bin\Debug\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="HospitalSolution\bin\Debug\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="HospitalSolution\bin\Debug\K4os.Compression.LZ4.xml" />
+    <Content Include="HospitalSolution\bin\Debug\K4os.Hash.xxHash.dll" />
+    <Content Include="HospitalSolution\bin\Debug\K4os.Hash.xxHash.xml" />
+    <Content Include="HospitalSolution\bin\Debug\MySql.Data.dll" />
+    <Content Include="HospitalSolution\bin\Debug\MySql.Data.xml" />
+    <Content Include="HospitalSolution\bin\Debug\System.Buffers.dll" />
+    <Content Include="HospitalSolution\bin\Debug\System.Buffers.xml" />
+    <Content Include="HospitalSolution\bin\Debug\System.IO.Pipelines.dll" />
+    <Content Include="HospitalSolution\bin\Debug\System.IO.Pipelines.xml" />
+    <Content Include="HospitalSolution\bin\Debug\System.Memory.dll" />
+    <Content Include="HospitalSolution\bin\Debug\System.Memory.xml" />
+    <Content Include="HospitalSolution\bin\Debug\System.Numerics.Vectors.dll" />
+    <Content Include="HospitalSolution\bin\Debug\System.Numerics.Vectors.xml" />
+    <Content Include="HospitalSolution\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="HospitalSolution\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="HospitalSolution\bin\Debug\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="HospitalSolution\bin\Debug\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="HospitalSolution\bin\Debug\ZstdSharp.dll" />
+    <Content Include="HospitalSolution\HospitalSolution.sln" />
+    <Content Include="HospitalSolution\obj\Debug\Hospital.UI.csproj.FileListAbsolute.txt" />
+    <Content Include="HospitalSolution\obj\Debug\HospitalSolution.exe" />
+    <Content Include="HospitalSolution\obj\Debug\HospitalSolution.pdb" />
+    <Content Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll" />
+    <Content Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.xml" />
+    <Content Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\lib\net6.0\BouncyCastle.Cryptography.dll" />
+    <Content Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\lib\net6.0\BouncyCastle.Cryptography.xml" />
+    <Content Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\lib\netstandard2.0\BouncyCastle.Cryptography.dll" />
+    <Content Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\lib\netstandard2.0\BouncyCastle.Cryptography.xml" />
+    <Content Include="HospitalSolution\packages\BouncyCastle.Cryptography.2.6.2\packageIcon.png" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\net45\Google.Protobuf.dll" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\net45\Google.Protobuf.pdb" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\net45\Google.Protobuf.xml" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\net5.0\Google.Protobuf.dll" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\net5.0\Google.Protobuf.pdb" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\net5.0\Google.Protobuf.xml" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\netstandard1.1\Google.Protobuf.dll" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\netstandard1.1\Google.Protobuf.pdb" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\netstandard1.1\Google.Protobuf.xml" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\netstandard2.0\Google.Protobuf.dll" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\netstandard2.0\Google.Protobuf.pdb" />
+    <Content Include="HospitalSolution\packages\Google.Protobuf.3.32.0\lib\netstandard2.0\Google.Protobuf.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\lib\net5.0\K4os.Compression.LZ4.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\lib\net5.0\K4os.Compression.LZ4.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\lib\net6.0\K4os.Compression.LZ4.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\lib\net6.0\K4os.Compression.LZ4.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\lib\netstandard2.0\K4os.Compression.LZ4.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\lib\netstandard2.0\K4os.Compression.LZ4.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\lib\netstandard2.1\K4os.Compression.LZ4.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.1.3.8\lib\netstandard2.1\K4os.Compression.LZ4.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net5.0\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net5.0\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net6.0\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net6.0\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\netstandard2.0\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\netstandard2.0\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\netstandard2.1\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\netstandard2.1\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\lib\net5.0\K4os.Hash.xxHash.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\lib\net5.0\K4os.Hash.xxHash.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\lib\net6.0\K4os.Hash.xxHash.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\lib\net6.0\K4os.Hash.xxHash.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\lib\netstandard2.0\K4os.Hash.xxHash.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\lib\netstandard2.0\K4os.Hash.xxHash.xml" />
+    <Content Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\lib\netstandard2.1\K4os.Hash.xxHash.dll" />
+    <Content Include="HospitalSolution\packages\K4os.Hash.xxHash.1.0.8\lib\netstandard2.1\K4os.Hash.xxHash.xml" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\Icon.png" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\LICENSE.TXT" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="HospitalSolution\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\version.txt" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\net462\MySql.Data.dll" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\net462\MySql.Data.xml" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\net48\MySql.Data.dll" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\net48\MySql.Data.xml" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\net8.0\MySql.Data.dll" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\net8.0\MySql.Data.xml" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\net9.0\MySql.Data.dll" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\net9.0\MySql.Data.xml" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\netstandard2.0\MySql.Data.dll" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\netstandard2.0\MySql.Data.xml" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\netstandard2.1\MySql.Data.dll" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\lib\netstandard2.1\MySql.Data.xml" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\logo-mysql-170x115.png" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\runtimes\win-x64\native\comerr64.dll" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\runtimes\win-x64\native\gssapi64.dll" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\runtimes\win-x64\native\k5sprt64.dll" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\runtimes\win-x64\native\krb5_64.dll" />
+    <Content Include="HospitalSolution\packages\MySql.Data.9.5.0\runtimes\win-x64\native\krbcc64.dll" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.xml" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.dll" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.xml" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.dll" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.xml" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\LICENSE.TXT" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\ref\net45\System.Buffers.dll" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\ref\net45\System.Buffers.xml" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\ref\netstandard1.1\System.Buffers.dll" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\ref\netstandard1.1\System.Buffers.xml" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\ref\netstandard2.0\System.Buffers.dll" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\ref\netstandard2.0\System.Buffers.xml" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\useSharedDesignerContext.txt" />
+    <Content Include="HospitalSolution\packages\System.Buffers.4.5.1\version.txt" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\Icon.png" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.xml" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net6.0\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net6.0\System.Configuration.ConfigurationManager.xml" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net7.0\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net7.0\System.Configuration.ConfigurationManager.xml" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net8.0\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net8.0\System.Configuration.ConfigurationManager.xml" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\lib\netstandard2.0\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\lib\netstandard2.0\System.Configuration.ConfigurationManager.xml" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\LICENSE.TXT" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="HospitalSolution\packages\System.Configuration.ConfigurationManager.8.0.0\useSharedDesignerContext.txt" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\Icon.png" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.xml" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\lib\netcoreapp3.0\System.IO.Pipelines.dll" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\lib\netcoreapp3.0\System.IO.Pipelines.xml" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\lib\netstandard1.3\System.IO.Pipelines.dll" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\lib\netstandard1.3\System.IO.Pipelines.xml" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\lib\netstandard2.0\System.IO.Pipelines.dll" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\lib\netstandard2.0\System.IO.Pipelines.xml" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\LICENSE.TXT" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\ref\netcoreapp2.0\System.IO.Pipelines.dll" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\ref\netcoreapp2.0\System.IO.Pipelines.xml" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\useSharedDesignerContext.txt" />
+    <Content Include="HospitalSolution\packages\System.IO.Pipelines.5.0.2\version.txt" />
+    <Content Include="HospitalSolution\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll" />
+    <Content Include="HospitalSolution\packages\System.Memory.4.5.5\lib\net461\System.Memory.xml" />
+    <Content Include="HospitalSolution\packages\System.Memory.4.5.5\lib\netstandard1.1\System.Memory.dll" />
+    <Content Include="HospitalSolution\packages\System.Memory.4.5.5\lib\netstandard1.1\System.Memory.xml" />
+    <Content Include="HospitalSolution\packages\System.Memory.4.5.5\lib\netstandard2.0\System.Memory.dll" />
+    <Content Include="HospitalSolution\packages\System.Memory.4.5.5\lib\netstandard2.0\System.Memory.xml" />
+    <Content Include="HospitalSolution\packages\System.Memory.4.5.5\LICENSE.TXT" />
+    <Content Include="HospitalSolution\packages\System.Memory.4.5.5\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="HospitalSolution\packages\System.Memory.4.5.5\useSharedDesignerContext.txt" />
+    <Content Include="HospitalSolution\packages\System.Memory.4.5.5\version.txt" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.xml" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.xml" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\LICENSE.TXT" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.dll" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.xml" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.dll" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.xml" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\useSharedDesignerContext.txt" />
+    <Content Include="HospitalSolution\packages\System.Numerics.Vectors.4.5.0\version.txt" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\Icon.png" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net6.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net6.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\LICENSE.TXT" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="HospitalSolution\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\useSharedDesignerContext.txt" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard1.0\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard1.0\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard2.0\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\LICENSE.TXT" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\useSharedDesignerContext.txt" />
+    <Content Include="HospitalSolution\packages\System.Threading.Tasks.Extensions.4.5.4\version.txt" />
+    <Content Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\lib\net462\ZstdSharp.dll" />
+    <Content Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\lib\net5.0\ZstdSharp.dll" />
+    <Content Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\lib\net6.0\ZstdSharp.dll" />
+    <Content Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\lib\net7.0\ZstdSharp.dll" />
+    <Content Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\lib\net8.0\ZstdSharp.dll" />
+    <Content Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\lib\net9.0\ZstdSharp.dll" />
+    <Content Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\lib\netcoreapp3.1\ZstdSharp.dll" />
+    <Content Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\lib\netstandard2.0\ZstdSharp.dll" />
+    <Content Include="HospitalSolution\packages\ZstdSharp.Port.0.8.6\lib\netstandard2.1\ZstdSharp.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HospitalSolution\Hospital.UIForm.resx">
+      <DependentUpon>Hospital.UIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalSolution\obj\Debug\HospitalSolution.FormAddDrug.resources" />
+    <EmbeddedResource Include="HospitalSolution\obj\Debug\HospitalSolution.Properties.Resources.resources" />
+    <EmbeddedResource Include="HospitalSolution\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\UP.01\v17\" />
+    <Folder Include="Hospital.Core\bin\Release\" />
+    <Folder Include="Hospital.Core\obj\Debug\TempPE\" />
+    <Folder Include="Hospital.Core\Services\" />
+    <Folder Include="Hospital.Data\bin\Release\" />
+    <Folder Include="Hospital.Data\obj\Debug\TempPE\" />
+    <Folder Include="Hospital.Data\Repositories\" />
+    <Folder Include="HospitalSolution\bin\Release\" />
+    <Folder Include="HospitalSolution\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
